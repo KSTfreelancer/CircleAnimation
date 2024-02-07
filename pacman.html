@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pacman</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .pacman{
+            width: 0px;
+            height: 0px;
+            /* border: 100px solid red; */
+            border: 100px solid ;
+             border-color: red; 
+
+            /* border-image-source: linear-gradient(to left, #743ad5, #d53a9d); */
+            border-top-width: 100px;
+            border-bottom-width: 0px;
+            border-right-width: 100vw;
+            border-left-width:0px;
+            border-right-color: white;
+        }
+        .round{
+            margin: 20px auto;
+            height: 0;
+            width: 0;
+            border: 70px solid blue;
+            border-radius: 50%;
+            border-right-color: red;
+            border-left-color: green;
+            border-top-color: white;
+            border-bottom-color:white;
+            animation: pp 2s infinite linear;
+        }
+        @keyframes pp{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pacman"></div><br><br>
+    <div class="round"></div>
+</body>
+</html>

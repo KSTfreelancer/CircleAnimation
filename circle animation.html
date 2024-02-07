@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            width: 90%;
+            height: 95vh;
+            background-color: antiquewhite;
+        }
+        
+        .circle{
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            border-radius: 50%;
+            border: 15px solid green;
+            border-top: 15px solid blue;
+            animation: pp 3s linear infinite;
+            position: absolute;
+            
+        }
+        
+        #dd{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: relative;
+            transform: translate(15px,15px);
+        }
+        @keyframes pp{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="to">
+   <div class="circle">
+       
+   </div>
+   <img id="dd" src="brett-sayles-3%20background.jpg" alt="">
+    </div>
+</body>
+</html>
